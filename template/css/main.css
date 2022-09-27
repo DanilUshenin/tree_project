@@ -1,0 +1,72 @@
+body {
+    font-family: Lucida Handwriting, Cursive;
+}
+
+.wrapper {
+    margin: 20px;
+}
+
+.fa-plus-square-o {
+    cursor: pointer;
+    color: green;
+}
+
+.fa-minus-square-o {
+    cursor: pointer;
+    color: red;
+}
+
+#delete-root-node-popup-timer {
+    color:red;
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.show-children, .hide-children {
+    cursor: pointer;
+}
+
+.show-children {
+    display: none;
+}
+
+.node-name {
+    cursor: pointer;
+    margin-left: 1px;
+}
+
+ul {
+    padding-inline-start: 25px !important;
+}
+
+li {
+    list-style-type:none;
+    margin:0;
+    padding:10px 5px 0 5px;
+    position:relative
+}
+
+li::before, li::after {
+    content:'';
+    position:absolute;
+    right:auto
+}
+
+li::before {
+    border-left:1px solid #999;
+    bottom:50px;
+    height:100%;
+    top:0;
+    width:1px
+}
+
+li:last-child::before {
+    height: 22px;
+}
+
+li::after {
+    border-top:1px solid #999;
+    height:20px;
+    top:22px;
+    width:25px
+}
