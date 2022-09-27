@@ -76,7 +76,7 @@ class NodeRepository
         $result = $stmt->execute([
             'name' => $node->getAttribute('name'),
             'parent_id' => $node->getAttribute('parent_id'),
-            'is_root' => $node->getAttribute('is_root')
+            'is_root' => (int)$node->getAttribute('is_root')
         ]);
 
         if ($result) {
@@ -96,7 +96,7 @@ class NodeRepository
             'id' => $node->getAttribute('id'),
             'name' => $node->getAttribute('name'),
             'parent_id' => $node->getAttribute('parent_id'),
-            'is_root' => $node->getAttribute('is_root')
+            'is_root' => (int)$node->getAttribute('is_root')
         ]);
     }
 
